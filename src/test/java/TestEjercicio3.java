@@ -6,7 +6,7 @@ public class TestEjercicio3 {
     @Test
     public void testListaOrdenada(){
         ListaOrdenada lo = new ListaOrdenada();
-        lo.add("xd");
+        lo.add("maven");
         lo.add("java");
         lo.add("");
         lo.add("Hola");
@@ -15,5 +15,9 @@ public class TestEjercicio3 {
 
         Assert.assertEquals("" , lo.get(0));
         Assert.assertEquals("Hola", lo.get(1));
+        Assert.assertEquals(4, lo.size());
+        Assert.assertFalse(lo.isEmpty());
+
+
     }
 }
